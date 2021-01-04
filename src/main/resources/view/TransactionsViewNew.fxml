@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@../css/transactions.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.mmam.myHouseholdEconomy.view.TransactionController">
+   <children>
+      <Accordion prefHeight="469.0" prefWidth="800.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="400.0" prefWidth="800.0" text="Income">
+            <content>
+              <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <children>
+                        <Pane fx:id="incomePane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label fx:id="incomeTitleLb" layoutX="315.0" layoutY="14.0" text="Add new Income" />
+                              <Button fx:id="deleteIncomeBtn" layoutX="431.0" layoutY="305.0" mnemonicParsing="false" text="-" />
+                              <Button fx:id="submitIncomeBtn" layoutX="276.0" layoutY="305.0" mnemonicParsing="false" text="+" />
+                              <TableView fx:id="incomeTable" layoutX="14.0" layoutY="50.0" prefHeight="234.0">
+                                <columns>
+                                  <TableColumn fx:id="colNameIncome" prefWidth="139.0" text="Name" />
+                                  <TableColumn fx:id="colConcernsIncome" prefWidth="130.0" text="Concerns" />
+                                    <TableColumn fx:id="colAmountIncome" prefWidth="135.0" text="Amount" />
+                                    <TableColumn fx:id="colCommentIncome" prefWidth="240.0" text="Comment" />
+                                    <TableColumn fx:id="colTaxedIncome" prefWidth="65.0" text="Taxed" />
+                                    <TableColumn fx:id="colCouponIncome" prefWidth="77.0" text="Coupon" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="editIncomeBtn" layoutX="353.0" layoutY="305.0" mnemonicParsing="false" text="Edit" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="800.0" text="Expense">
+               <content>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <children>
+                        <Pane fx:id="expensePane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView id="expensesTableSmall" fx:id="expenseTableSmall" layoutY="50.0" prefHeight="257.0">
+                                 <columns>
+                                    <TableColumn fx:id="colExpenseSmall" prefWidth="173.00000607967377" text="Name" />
+                                    <TableColumn fx:id="colAmountSmall" prefWidth="97.00003051757812" text="Amount" />
+                                    <TableColumn fx:id="colDateSmall" prefWidth="154.0" text="Date" />
+                                    <TableColumn fx:id="colCategorySmall" prefWidth="186.99996948242188" text="Category" />
+                                    <TableColumn fx:id="colCommentSmall" prefWidth="250.0" text="Comment" />
+                                 </columns>
+                              </TableView>
+                              <Label fx:id="expenseTitleLb" layoutX="312.0" layoutY="7.0" text="Add new Expense" />
+                              <Button fx:id="submitBtn" layoutX="273.0" layoutY="319.0" mnemonicParsing="false" text="+" />
+                              <Button fx:id="deleteBtn" layoutX="434.0" layoutY="319.0" mnemonicParsing="false" text="-" />
+                              <Button fx:id="editExpenseBtn" layoutX="355.0" layoutY="319.0" mnemonicParsing="false" text="Edit" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Pane layoutY="471.0" prefWidth="800.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutY="6.0" text="This month expenses: " />
+            <Label fx:id="expenseLb" layoutX="146.0" layoutY="6.0" text="\$expenses" />
+            <Label fx:id="incomeLb" layoutX="367.0" layoutY="6.0" text="\$Income" />
+            <Label layoutX="239.0" layoutY="6.0" text="This month income: " />
+            <Label layoutX="455.0" layoutY="6.0" text="Total: " />
+            <Label fx:id="totalLb" layoutX="504.0" layoutY="6.0" text="\$total" />
+         </children>
+      </Pane>
+      <Pane layoutX="554.0" layoutY="473.0" prefHeight="26.0" prefWidth="289.0" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Text fx:id="curMonth" fill="#3c659d" layoutX="160.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="curMonth" />
+            <Button fx:id="left" layoutX="114.0" layoutY="1.0" mnemonicParsing="false" text="&lt;&lt;" textFill="#3c659d" />
+            <Button fx:id="right" layoutX="257.0" layoutY="1.0" mnemonicParsing="false" text="&gt;&gt;" textFill="#3c659d" />
+            <Text fx:id="curYear" fill="#3c659d" layoutX="220.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2000" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
