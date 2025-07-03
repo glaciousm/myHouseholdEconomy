@@ -7,6 +7,4 @@ target/
 bin/
 
 database.db
-
-
 *.iml
