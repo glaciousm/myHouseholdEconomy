@@ -112,7 +112,7 @@ public class OptionsController {
 		
 		browseExcelBtn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
-				FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Excel files (*.xls)", "*.xlsx");
+				FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Excel files (*.xlsx)", "*.xlsx");
                 fileChooser.getExtensionFilters().add(extFilter);
 				File file = fileChooser.showOpenDialog(stage);
 				if (file != null) {
