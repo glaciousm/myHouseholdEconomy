@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@../css/transactions.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.mmam.myHouseholdEconomy.view.TransactionController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@../css/transactions.css,@../css/fonts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.mmam.myHouseholdEconomy.view.TransactionController">
    <children>
       <Accordion prefHeight="469.0" prefWidth="800.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <panes>

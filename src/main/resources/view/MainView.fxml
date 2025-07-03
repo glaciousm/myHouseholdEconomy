@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.mmam.myHouseholdEconomy.view.MainController">
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/fonts.css" fx:controller="gr.mmam.myHouseholdEconomy.view.MainController">
    <bottom>
       <AnchorPane prefHeight="27.0" prefWidth="800.0" style="-fx-background-color: #434f63; -fx-border-style: solid none none none; -fx-border-color: gray;" BorderPane.alignment="CENTER">
          <children>
@@ -27,16 +26,8 @@
          <children>
             <Pane layoutX="19.0" layoutY="14.0" prefHeight="190.0" prefWidth="200.0">
                <children>
-                  <Text fill="#d0d0d0" layoutX="12.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="my Household">
-                     <font>
-                        <Font name="Calibri" size="30.0" />
-                     </font>
-                  </Text>
-                  <Text fill="WHITE" layoutX="33.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy">
-                     <font>
-                        <Font name="Calibri" size="36.0" />
-                     </font>
-                  </Text>
+                  <Text fill="#d0d0d0" layoutX="12.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="my Household" styleClass="logo-sub" />
+                  <Text fill="WHITE" layoutX="33.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy" styleClass="logo-main" />
                   <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="10.0">
                      <image>
                         <Image url="@../images/home-icon.png" />
@@ -44,10 +35,7 @@
                   </ImageView>
                </children>
             </Pane>
-            <Button fx:id="homeBtn" alignment="TOP_LEFT" layoutX="-7.0" layoutY="231.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: transparent;" text=" Overview" textFill="#dadada" textOverrun="CLIP" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="homeBtn" alignment="TOP_LEFT" layoutX="-7.0" layoutY="231.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: transparent;" text=" Overview" textFill="#dadada" textOverrun="CLIP" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <graphic>
                   <ImageView fx:id="overviewImg">
                      <image>
@@ -56,10 +44,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="incomeListBtn" alignment="TOP_LEFT" layoutY="361.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Income Categories" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="incomeListBtn" alignment="TOP_LEFT" layoutY="361.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Income Categories" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <graphic>
                   <ImageView>
                      <image>
@@ -68,10 +53,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="statisticsBtn" alignment="TOP_LEFT" layoutY="405.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Statistics" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="statisticsBtn" alignment="TOP_LEFT" layoutY="405.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Statistics" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <graphic>
                   <ImageView>
                      <image>
@@ -80,10 +62,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="capitalBtn" alignment="TOP_LEFT" layoutY="493.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Checkpoint" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="capitalBtn" alignment="TOP_LEFT" layoutY="493.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Checkpoint" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <graphic>
                   <ImageView>
                      <image>
@@ -92,10 +71,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="optionsBtn" alignment="TOP_LEFT" layoutY="449.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Options" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="optionsBtn" alignment="TOP_LEFT" layoutY="449.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Options" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <graphic>
                   <ImageView>
                      <image>
@@ -104,10 +80,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="expensesBtn" alignment="TOP_LEFT" layoutX="7.0" layoutY="275.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Transactions" textFill="#dadada" textOverrun="CLIP" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="expensesBtn" alignment="TOP_LEFT" layoutX="7.0" layoutY="275.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Transactions" textFill="#dadada" textOverrun="CLIP" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <graphic>
                   <ImageView fx:id="expensesImg">
                      <image>
@@ -116,10 +89,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="categoriesListBtn" alignment="TOP_LEFT" layoutX="-1.0" layoutY="319.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Expense Categories" textFill="#dadada">
-               <font>
-                  <Font name="Calibri" size="24.0" />
-               </font>
+            <Button styleClass="menu-button" fx:id="categoriesListBtn" alignment="TOP_LEFT" layoutX="-1.0" layoutY="319.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: transparent;" text=" Expense Categories" textFill="#dadada">
                <graphic>
                   <ImageView>
                      <image>

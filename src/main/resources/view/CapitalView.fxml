@@ -6,10 +6,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gr.mmam.myHouseholdEconomy.view.CapitalController">
+<AnchorPane prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" stylesheets="@../css/fonts.css" fx:controller="gr.mmam.myHouseholdEconomy.view.CapitalController">
    <children>
       <Pane prefHeight="500.0" prefWidth="800.0">
          <children>
@@ -20,10 +19,7 @@
                   <TableColumn fx:id="commentCol" prefWidth="250.0" text="Comment" />
               </columns>
             </TableView>
-            <Label fx:id="title" layoutX="326.0" layoutY="14.0" text="List of checkpoints">
-               <font>
-                  <Font name="Segoe UI Symbol" size="18.0" />
-               </font>
+            <Label fx:id="title" styleClass="title-text" layoutX="326.0" layoutY="14.0" text="List of checkpoints">
             </Label>
             <Button fx:id="addBtn" layoutX="362.0" layoutY="416.0" mnemonicParsing="false" text="Add" />
          </children>

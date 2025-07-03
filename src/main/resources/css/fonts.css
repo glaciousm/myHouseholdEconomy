@@ -1,0 +1,27 @@
+.root {
+    -fx-font-family: "Segoe UI", "Calibri", sans-serif;
+}
+
+.title-text {
+    -fx-font-size: 18pt;
+}
+
+.section-title {
+    -fx-font-size: 20pt;
+}
+
+.menu-button {
+    -fx-font-size: 24pt;
+}
+
+.logo-sub {
+    -fx-font-size: 30pt;
+}
+
+.logo-main {
+    -fx-font-size: 36pt;
+}
+
+.small-text {
+    -fx-font-size: 14pt;
+}

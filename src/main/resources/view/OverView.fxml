@@ -9,9 +9,8 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #434f63;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gr.mmam.myHouseholdEconomy.view.OverviewController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #434f63;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" stylesheets="@../css/fonts.css" fx:controller="gr.mmam.myHouseholdEconomy.view.OverviewController">
    <children>
       <GridPane hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="509.0" prefWidth="800.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -27,40 +26,19 @@
                <children>
                   <Pane fx:id="monthlyHouseholdPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label fx:id="monthIncomeLabel" layoutY="56.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="monthIncomeLabel" styleClass="small-text" layoutY="56.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="monthExpensesLabel" layoutY="90.0" text="Expenses" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="monthExpensesLabel" styleClass="small-text" layoutY="90.0" text="Expenses" textFill="WHITE">
                         </Label>
-                        <Label fx:id="monthTotalLabel" layoutY="125.0" text="Total" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="monthTotalLabel" styleClass="small-text" layoutY="125.0" text="Total" textFill="WHITE">
                         </Label>
-                        <Label fx:id="monthIncome" layoutX="162.0" layoutY="56.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="monthIncome" styleClass="small-text" layoutX="162.0" layoutY="56.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="monthExpenses" layoutX="162.0" layoutY="90.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="monthExpenses" styleClass="small-text" layoutX="162.0" layoutY="90.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="monthTotal" layoutX="162.0" layoutY="125.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="monthTotal" styleClass="small-text" layoutX="162.0" layoutY="125.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="monthlyHouseholdLabel" alignment="CENTER" layoutX="120.0" layoutY="14.0" text="Monthly Household" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="20.0" />
-                           </font>
+                        <Label fx:id="monthlyHouseholdLabel" styleClass="section-title" alignment="CENTER" layoutX="120.0" layoutY="14.0" text="Monthly Household" textFill="WHITE">
                         </Label>
                      </children>
                   </Pane>
@@ -70,10 +48,7 @@
                <children>
                   <Pane fx:id="monthlyTopPane" prefHeight="250.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label fx:id="monthlyTopLabel" alignment="TOP_LEFT" layoutX="85.0" layoutY="-1.0" text="Top Expenses of the Month" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="20.0" />
-                           </font>
+                        <Label fx:id="monthlyTopLabel" styleClass="section-title" alignment="TOP_LEFT" layoutX="85.0" layoutY="-1.0" text="Top Expenses of the Month" textFill="WHITE">
                         </Label>
                         <TableView id="TopExpensesMonthTable" fx:id="expenseMonthTable" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0">
                            <columns>
@@ -89,10 +64,7 @@
                <children>
                   <Pane fx:id="yearlyTopPane" prefHeight="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label id="test1" fx:id="yearlyTopLabel" alignment="CENTER" layoutX="94.0" layoutY="-1.0" text="Top Expenses of the Year" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="20.0" />
-                           </font>
+                        <Label id="test1" fx:id="yearlyTopLabel" styleClass="section-title" alignment="CENTER" layoutX="94.0" layoutY="-1.0" text="Top Expenses of the Year" textFill="WHITE">
                         </Label>
                         <TableView id="TopExpensesYearTable" fx:id="expenseYearTable" layoutX="-5.0" layoutY="40.0" prefHeight="200.0">
                           <columns>
@@ -108,50 +80,23 @@
                <children>
                   <Pane fx:id="yearlyHouseholdPane" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #3C659D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label fx:id="yearlyHouseholdLabel" alignment="CENTER" layoutX="123.0" layoutY="14.0" text="Yearly Household" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="20.0" />
-                           </font>
+                        <Label fx:id="yearlyHouseholdLabel" styleClass="section-title" alignment="CENTER" layoutX="123.0" layoutY="14.0" text="Yearly Household" textFill="WHITE">
                         </Label>
-                        <Label fx:id="yearIncomeLabel" layoutX="101.0" layoutY="60.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="yearIncomeLabel" styleClass="small-text" layoutX="101.0" layoutY="60.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="yearExpensesLabel" layoutX="96.0" layoutY="94.0" text="Expenses" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="yearExpensesLabel" styleClass="small-text" layoutX="96.0" layoutY="94.0" text="Expenses" textFill="WHITE">
                         </Label>
-                        <Label fx:id="yearTotalLabel" layoutX="116.0" layoutY="129.0" text="Total" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="yearTotalLabel" styleClass="small-text" layoutX="116.0" layoutY="129.0" text="Total" textFill="WHITE">
                         </Label>
-                        <Label fx:id="yearIncome" layoutX="258.0" layoutY="60.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="yearIncome" styleClass="small-text" layoutX="258.0" layoutY="60.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="yearExpenses" layoutX="258.0" layoutY="94.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="yearExpenses" styleClass="small-text" layoutX="258.0" layoutY="94.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="yearTotal" layoutX="258.0" layoutY="129.0" text="Income" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="yearTotal" styleClass="small-text" layoutX="258.0" layoutY="129.0" text="Income" textFill="WHITE">
                         </Label>
-                        <Label fx:id="balanceLabel" layoutX="99.0" layoutY="195.0" text="Balance" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="balanceLabel" styleClass="small-text" layoutX="99.0" layoutY="195.0" text="Balance" textFill="WHITE">
                         </Label>
-                        <Label fx:id="balanceTotal" layoutX="254.0" layoutY="195.0" text="Balance" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="14.0" />
-                           </font>
+                        <Label fx:id="balanceTotal" styleClass="small-text" layoutX="254.0" layoutY="195.0" text="Balance" textFill="WHITE">
                         </Label>
                      </children>
                   </Pane>
