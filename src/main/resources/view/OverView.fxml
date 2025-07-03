@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #434f63;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gr.mmam.myHouseholdEconomy.view.OverviewController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bg-primary" stylesheets="@../css/theme.css,@../css/overviewCSS.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gr.mmam.myHouseholdEconomy.view.OverviewController">
    <children>
       <GridPane hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="509.0" prefWidth="800.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -23,7 +23,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3C659D;" GridPane.columnIndex="1">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-secondary" GridPane.columnIndex="1">
                <children>
                   <Pane fx:id="monthlyHouseholdPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
@@ -66,7 +66,7 @@
                   </Pane>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3C659D;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-secondary" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <Pane fx:id="monthlyTopPane" prefHeight="250.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
@@ -85,7 +85,7 @@
                   </Pane>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3C659D;" GridPane.rowIndex="1">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-secondary" GridPane.rowIndex="1">
                <children>
                   <Pane fx:id="yearlyTopPane" prefHeight="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
@@ -104,9 +104,9 @@
                   </Pane>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3C659D;">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-secondary">
                <children>
-                  <Pane fx:id="yearlyHouseholdPane" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #3C659D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Pane fx:id="yearlyHouseholdPane" prefHeight="250.0" prefWidth="400.0" styleClass="bg-secondary" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <Label fx:id="yearlyHouseholdLabel" alignment="CENTER" layoutX="123.0" layoutY="14.0" text="Yearly Household" textFill="WHITE">
                            <font>
