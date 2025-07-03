@@ -60,7 +60,7 @@ import javafx.scene.text.Text;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
 
-public class TransactionController<JFXButton> {
+public class TransactionController {
 
 	MainController mainController = new MainController();
 
