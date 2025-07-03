@@ -68,7 +68,7 @@ public class OptionsController {
 		loadExcelBtn.setDisable(true);
 		changeCurrencyBtn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
-				if (currency.getSelectionModel().getSelectedItem()!= null && currency.getSelectionModel().getSelectedItem()!= "") {
+				if (currency.getSelectionModel().getSelectedItem()!= null && !currency.getSelectionModel().getSelectedItem().isEmpty()) {
 					setCurrency(currency.getSelectionModel().getSelectedItem());
 				}
 			}
@@ -130,7 +130,7 @@ public class OptionsController {
 	
 	private void initializeCurrency() {
 		currency.getItems().clear();
-		currency.getItems().add("€");
+		currency.getItems().add("â‚¬");
 		currency.getItems().add("$");
 		currency.getSelectionModel().select(optionsDao.getCurrency());
 	}
