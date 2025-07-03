@@ -75,7 +75,7 @@ public class OptionsController {
 		});
 		clearOutcomeBtn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
-				Alert alert = new Alert(AlertType.CONFIRMATION, "Are you se you want to delete ALL expenses ?",
+				Alert alert = new Alert(AlertType.CONFIRMATION, "Are you sure you want to delete ALL expenses ?",
 						ButtonType.YES, ButtonType.CANCEL);
 				alert.setHeaderText(null);
 				alert.showAndWait();
@@ -87,7 +87,7 @@ public class OptionsController {
 		});
 		clearExpensesBtn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
-				Alert alert = new Alert(AlertType.CONFIRMATION, "Are you se you want to delete ALL expense Sub Categories ?",
+				Alert alert = new Alert(AlertType.CONFIRMATION, "Are you sure you want to delete ALL expense Sub Categories ?",
 						ButtonType.YES, ButtonType.CANCEL);
 				alert.setHeaderText(null);
 				alert.showAndWait();
@@ -99,7 +99,7 @@ public class OptionsController {
 		});
 		clearCategoriesBtn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
-				Alert alert = new Alert(AlertType.CONFIRMATION, "Are you se you want to delete ALL expense Categories ?",
+				Alert alert = new Alert(AlertType.CONFIRMATION, "Are you sure you want to delete ALL expense Categories ?",
 						ButtonType.YES, ButtonType.CANCEL);
 				alert.setHeaderText(null);
 				alert.showAndWait();
@@ -130,7 +130,7 @@ public class OptionsController {
 	
 	private void initializeCurrency() {
 		currency.getItems().clear();
-		currency.getItems().add("€");
+		currency.getItems().add("â‚¬");
 		currency.getItems().add("$");
 		currency.getSelectionModel().select(optionsDao.getCurrency());
 	}
