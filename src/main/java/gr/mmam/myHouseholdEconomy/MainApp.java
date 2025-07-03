@@ -230,7 +230,7 @@ public class MainApp extends Application {
 			controller.setMainApp(this);
 			controller.setMonth(month);
 			controller.setYear(year);
-			controller.initialize();;
+                        controller.initialize();
 		} catch (IOException e) {
 			Stacktrace.print(e);
 		}
