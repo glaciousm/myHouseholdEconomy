@@ -1,0 +1,18 @@
+.bg-primary {
+    -fx-background-color: #434f63;
+}
+
+.bg-secondary {
+    -fx-background-color: #3C659D;
+}
+
+.bg-transparent {
+    -fx-background-color: transparent;
+}
+
+.bottom-bar {
+    -fx-background-color: #434f63;
+    -fx-border-style: solid none none none;
+    -fx-border-color: gray;
+}
+
