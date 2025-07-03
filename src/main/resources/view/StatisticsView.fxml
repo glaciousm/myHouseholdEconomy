@@ -10,9 +10,8 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #434f63;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.mmam.myHouseholdEconomy.view.StatisticsController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #434f63;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/fonts.css" fx:controller="gr.mmam.myHouseholdEconomy.view.StatisticsController">
    <children>
       <GridPane hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="509.0" prefWidth="800.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -43,10 +42,7 @@
                         </TableView>
                         <Pane fx:id="monthlyHouseholdPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="400.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
                            <children>
-                              <Label fx:id="monthExpenseLbl" alignment="TOP_LEFT" layoutX="-8.0" layoutY="6.0" text="Expenses of $Month $Year" textFill="WHITE">
-                                 <font>
-                                    <Font name="Segoe UI Symbol" size="20.0" />
-                                 </font>
+                              <Label fx:id="monthExpenseLbl" styleClass="section-title" alignment="TOP_LEFT" layoutX="-8.0" layoutY="6.0" text="Expenses of $Month $Year" textFill="WHITE">
                                  <padding>
                                     <Insets left="50.0" />
                                  </padding>
@@ -81,10 +77,7 @@
                   </GridPane>
                   <Pane fx:id="yearlyHouseholdPane1" layoutX="10.0" layoutY="10.0" maxHeight="50.0" prefHeight="10.0" prefWidth="397.0" style="-fx-background-color: #3C659D;">
                      <children>
-                        <Label id="test1" fx:id="yearExpenseLbl1" alignment="CENTER" layoutX="129.0" layoutY="-12.0" text="Sum By Year" textFill="WHITE">
-                           <font>
-                              <Font name="Segoe UI Symbol" size="20.0" />
-                           </font>
+                        <Label id="test1" fx:id="yearExpenseLbl1" styleClass="section-title" alignment="CENTER" layoutX="129.0" layoutY="-12.0" text="Sum By Year" textFill="WHITE">
                         </Label>
                      </children>
                   </Pane>
@@ -103,10 +96,7 @@
                      <children>
                         <Pane fx:id="yearlyHouseholdPane" maxHeight="50.0" prefHeight="10.0" prefWidth="397.0" style="-fx-background-color: #3C659D;" GridPane.hgrow="ALWAYS">
                            <children>
-                              <Label id="test1" fx:id="yearExpenseLbl" alignment="CENTER" layoutX="49.0" layoutY="6.0" text="Expenses of Year $Year" textFill="WHITE">
-                                 <font>
-                                    <Font name="Segoe UI Symbol" size="20.0" />
-                                 </font>
+                              <Label id="test1" fx:id="yearExpenseLbl" styleClass="section-title" alignment="CENTER" layoutX="49.0" layoutY="6.0" text="Expenses of Year $Year" textFill="WHITE">
                               </Label>
                               <Button fx:id="yearExpenseMinusBtn" layoutX="340.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" text="-" />
                               <Button fx:id="yearExpensePlusBtn" layoutX="367.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+" />
