@@ -68,7 +68,7 @@ public class OptionsController {
 		loadExcelBtn.setDisable(true);
 		changeCurrencyBtn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
-				if (currency.getSelectionModel().getSelectedItem()!= null && currency.getSelectionModel().getSelectedItem()!= "") {
+				if (currency.getSelectionModel().getSelectedItem()!= null && !currency.getSelectionModel().getSelectedItem().isEmpty()) {
 					setCurrency(currency.getSelectionModel().getSelectedItem());
 				}
 			}
